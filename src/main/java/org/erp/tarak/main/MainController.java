@@ -118,12 +118,12 @@ public class MainController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	protected ModelAndView loadLogin(Map<String, Object> model) {
-		/*if (ERPUtilities.isValidUser(session)) {
+		if (ERPUtilities.isValidUser(session)) {
 			return new ModelAndView("home", model);
-		}*/
+		}
 		UserBean userBean = new UserBean();
 		model.put("userBean", userBean);
-		return new ModelAndView("index", model);
+		return new ModelAndView("main/index", model);
 	}
 
 
