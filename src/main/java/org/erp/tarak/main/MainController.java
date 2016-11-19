@@ -123,7 +123,7 @@ public class MainController {
 		}
 		UserBean userBean = new UserBean();
 		model.put("userBean", userBean);
-		return new ModelAndView("main/index", model);
+		return new ModelAndView("/main/index", model);
 	}
 
 
